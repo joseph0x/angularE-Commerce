@@ -1,0 +1,30 @@
+@media screen and (min-width: 996px) {
+  #signinSmallScreen,
+  #cartSmallScreen,
+  #logOut {
+    display: none;
+  }
+}
+html,
+body {
+  height: 100%;
+}
+nav {
+  font-family: "Comfortaa" !important ;
+}
+nav div #navbarNav ul li a:hover {
+  border-bottom: 2px solid #ff6f61;
+}
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+.bg-coral {
+  background-color: #39cccc;
+}
+.bg-teal {
+  background-color: #ff6f61;
+}
+.white {
+  color: #ffffff;
+}

@@ -1,0 +1,33 @@
+<section class="container-fluid g-0 border-0">
+  <div class="row">
+    <ng-container *ngFor="let item of productList; let i = index">
+      <div class="col-sm-2">
+        <div
+          class="card mx-3 my-3 border-0"
+          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)"
+        >
+          <img
+            [src]="item.image"
+            class="card-img-top"
+            alt="..."
+            width="135"
+            height="160"
+          />
+          <div class="card-body">
+            <h5 class="card-title fs-6">{{ item.title }}</h5>
+            <p class="card-text text-truncate" style="font-size: 12px">
+              {{ item.description }}
+            </p>
+            <p class="fs-6 fw-medium">{{ item.price | currency : "USD" }}</p>
+            <button
+              class="touch-device-button btn btn-sm bg-teal rounded-0"
+              (click)="addToCart(item)"
+            >
+              <a class="text-decoration-none white">Add to cart</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</section>

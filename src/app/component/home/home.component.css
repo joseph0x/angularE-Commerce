@@ -1,0 +1,63 @@
+section #jumbotron {
+  background: url("src\assets\carouselCover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #39cccc;
+}
+
+section #jumbotron2 {
+  background: url("src\assets\carouselCover2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #39cccc;
+}
+section #jumbotron button,
+#jumbotron2 button {
+  background-color: #ff6f61;
+  outline: none;
+  border: none;
+  color: #ffffff;
+}
+
+.vh100 {
+  height: 100vh;
+}
+.vh75 {
+  height: 75vh;
+}
+section {
+  font-family: "Comfortaa";
+}
+/* Styles for devices with touch and no hover ability */
+@media (hover: none) and (pointer: coarse) {
+  .touch-device-button {
+    display: block;
+  }
+  .card:hover .touch-device-button {
+    display: none;
+  }
+}
+
+/* Styles for devices with cursor and hover ability */
+@media (hover: hover) and (pointer: fine) {
+  .touch-device-button {
+    display: none;
+  }
+  .card:hover .touch-device-button {
+    display: block;
+  }
+}
+.bg-coral {
+  background-color: #39cccc;
+}
+.bg-teal {
+  background-color: #ff6f61;
+}
+.white {
+  color: #ffffff;
+}
+.bg-lightgray {
+  background-color: #f5f5f5;
+}

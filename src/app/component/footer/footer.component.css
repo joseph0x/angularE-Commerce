@@ -1,0 +1,8 @@
+section #footer .row,
+.col-sm,
+div ul li a {
+  font-family: "Comfortaa" !important;
+}
+#footer div ul li a {
+  color: black;
+}

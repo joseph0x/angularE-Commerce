@@ -1,0 +1,9 @@
+.form-register {
+  max-width: 330px;
+  padding: 1rem;
+  box-shadow: 0 20px 40px -10px rgb(0 0 0 / 18%);
+}
+.validatingInput {
+  background-color: #ffb3b3;
+  color: #ff0000;
+}
